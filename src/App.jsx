@@ -2,7 +2,7 @@ export function App() {
 
   return (
     <div className="App">
-      <h1>Hello Vite</h1>
+      <h1>TODO</h1>
     </div>
   )
 }
