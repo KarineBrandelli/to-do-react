@@ -1,21 +1,33 @@
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+:root {
+  font-family: 'Poppins';
+  
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+
+  --color-light-background: hsl(0, 0%, 98%);
+  --color-light-texts: hsl(236, 8%, 41%);
+  --color-light-lists: hsl(236, 33%, 92%);
+
+  --color-dark-background: hsl(235, 21%, 11%);
+  --color-dark-texts: hsl(0, 0%, 98%);
+  --color-dark-lists: hsl(235, 24%, 19%);
+
+  color: var(--color-light-texts);
+  background-color: var(--color-light-background);
 }
 
 body {
-  display: flex;
-  place-items: center;
-
   min-height: 100vh;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: var(--color-dark-texts);
+    background-color: var(--color-dark-background);
   }
 }
