@@ -1,10 +1,14 @@
-export function App() {
+import { Title } from './components/Title/Title';
+import { Header } from './components/Header/Header';
+import './App.css';
 
+export function App() {
   return (
-    <div className="App">
-      <h1>TODO</h1>
-    </div>
+    <>
+      <Header />
+      <div className="container">
+        <Title />
+      </div>
+    </>
   )
 }
-
-export default App
