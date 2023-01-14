@@ -30,4 +30,14 @@ body {
     color: var(--color-dark-texts);
     background-color: var(--color-dark-background);
   }
+
+  #header-bg {
+    background: url('./components/Header/assets/bg-desktop-dark.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+    max-width: 100%;
+    padding: 10rem 0;
+  }
 }
