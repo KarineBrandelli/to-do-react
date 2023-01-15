@@ -1,0 +1,19 @@
+.light-mode-img {
+  background: url('./assets/bg-desktop-light.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  max-width: 100%;
+  padding: 10rem 0;
+}
+
+.dark-mode-img {
+  background: url('./assets/bg-desktop-dark.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  max-width: 100%;
+  padding: 10rem 0;
+}
