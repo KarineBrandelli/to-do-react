@@ -25,6 +25,10 @@ body {
   min-height: 100vh;
 }
 
+#root {
+  display: grid;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     color: var(--color-dark-texts);
