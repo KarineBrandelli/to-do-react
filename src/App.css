@@ -1,4 +1,7 @@
 .container {
+  justify-self: center;
+  justify-content: center;
+
+  width: 40rem;
   margin: -13rem 1rem 2rem 1rem;
-  max-width: 40rem;
 }
