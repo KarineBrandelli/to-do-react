@@ -1,0 +1,44 @@
+:root {  
+  color-scheme: light dark;
+
+  --color-light-background: hsl(0, 0%, 98%);
+  --color-light-texts: hsl(236, 8%, 41%);
+  --color-light-lists: hsl(236, 33%, 92%);
+
+  --color-dark-background: hsl(235, 21%, 11%);
+  --color-dark-texts: hsl(0, 0%, 98%);
+  --color-dark-lists: hsl(235, 24%, 19%);
+
+  color: var(--color-light-texts);
+  background-color: var(--color-light-background);
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  
+  background-color: var(--color-light-lists);
+  color: var(--color-light-texts);
+  border-radius: .5rem;
+  margin-top: 1.5rem;
+}
+
+.list-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem;
+  border-bottom: 2px solid hsl(234, 11%, 52%);
+}
+
+.todo-task {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ph-x,
+.ph-circle {
+  cursor: pointer;
+}
