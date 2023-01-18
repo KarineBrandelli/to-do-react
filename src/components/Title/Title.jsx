@@ -5,11 +5,11 @@ export function Title() {
     <div className="title">
       <h1>TODO</h1>
 
-      <div class="toggle-switch">
+      <div className="toggle-switch">
         <label>
           <input
-            class="toggle" type="checkbox" />
-          <span class="slider"></span>
+            className="toggle" type="checkbox" />
+          <span className="slider"></span>
         </label>
       </div>
     </div>
