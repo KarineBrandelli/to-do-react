@@ -4,10 +4,10 @@ export function Footer() {
   return (
     <footer>
       <p>
-        <span class="amount"> </span>
+        <span className="amount"> </span>
         tasks
       </p>
-      <p class="clear">Clear</p>
+      <p className="clear">Clear</p>
     </footer>
   );
 }
