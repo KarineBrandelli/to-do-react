@@ -1,50 +1,26 @@
 // import { Plus } from "phosphor-react";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./NewTask.css";
 
 export function NewTask() {
-  const [newTask, setNewTask] = useState('');
+  const database = JSON.parse(localStorage.getItem("items"));
 
-  const itens = JSON.parse(localStorage.getItem("itens")) || [];
-  console.log(itens);
+  const [task, setTask] = useState('');
+  const [itemsList, setItemsList] = useState(database || []);
 
-  // Array.from(itens).forEach((task) => {
-  //   criaTarefa(task.newTask);
-  // });
+  const handleAddItemToList = () => {
+    if (task === "") {
+      return;
+    }
 
-  function add() {
-    console.log(newTask);
+    setItemsList([...itemsList, task]);
 
-    if (newTask === "") return;
+    setTask("");
+  };
 
-    // criaTarefa(newTask);
-
-    let novaTarefa = {
-      tarefa: newTask,
-      id: itens.length + 1,
-    };
-
-    Array.from(itens).push(novaTarefa);
-
-    localStorage.setItem("itens", JSON.stringify(itens));
-  }
-
-  // function criaTarefa() {
-  //   console.log("criei");
-  //   // const template = `
-  //   // <div class="list-items">
-  //   // <span class="todo-task">
-  //   //   <i class="fa-regular fa-circle-check"></i>
-  //   //   <p class="task-content">${newTask}</p>
-  //   // </span>
-  //   // <i class="fa-solid fa-xmark"></i>
-  //   // </div>
-  //   // `;
-
-  //   // lista.innerHTML += template;
-
-  //   // removeTarefa();
-  // }
+  useEffect(() => {
+    localStorage.setItem("items", JSON.stringify(itemsList));
+  }, [itemsList]);
 
   return (
     <>
@@ -53,19 +29,22 @@ export function NewTask() {
           className="new-content"
           placeholder="What's new?"
           type="text"
-          value={newTask}
-          onChange={(e) => setNewTask(e.target.value)}
+          value={task}
+          onChange={(e) => setTask(e.target.value)}
         />
-        <i className="ph-plus" onClick={add}></i>
+        <i className="ph-plus" onClick={handleAddItemToList}></i>
       </div>
+
       <div className="todo-list">
-        <div className="list-items">
-          <span className="todo-task">
-            <i className="ph-circle"></i>
-            <p className="task-content">{newTask}</p>
-          </span>
-          <i className="ph-x"></i>
-        </div>
+        {itemsList.map((item, index) => (
+          <div className="list-items" key={`task - ${index}`}>
+            <span className="todo-task">
+              <i className="ph-circle"></i>
+              <p className="task-content">{item}</p>
+            </span>
+            <i className="ph-x"></i>
+          </div>
+        ))}
       </div>
     </>
   );
