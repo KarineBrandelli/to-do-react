@@ -33,3 +33,33 @@
   margin-left: -2rem;
   cursor: pointer;
 }
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  
+  background-color: var(--color-light-lists);
+  color: var(--color-light-texts);
+  border-radius: .5rem;
+  margin-top: 1.5rem;
+}
+
+.list-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem;
+  border-bottom: 2px solid hsl(234, 11%, 52%);
+}
+
+.todo-task {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ph-x,
+.ph-circle {
+  cursor: pointer;
+}
