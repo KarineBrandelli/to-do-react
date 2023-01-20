@@ -63,3 +63,19 @@
 .ph-circle {
   cursor: pointer;
 }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  background-color: var(--color-light-lists);
+  color: var(--color-light-texts);
+  border-radius: .5rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.clear:hover {
+  color: hsl(235, 8%, 72%);
+}
