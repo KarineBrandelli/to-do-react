@@ -1,7 +1,6 @@
 import { Title } from "./components/Title/Title";
 import { Header } from "./components/Header/Header";
 import { NewTask } from "./components/NewTask/NewTask";
-import { Footer } from "./components/Footer/Footer";
 import "./App.css";
 
 export function App() {
@@ -11,7 +10,6 @@ export function App() {
       <div className="container">
         <Title />
         <NewTask />
-        <Footer />
       </div>
     </>
   )
