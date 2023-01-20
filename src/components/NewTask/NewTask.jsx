@@ -10,6 +10,7 @@ export function NewTask() {
 
   const handleAddItemToList = () => {
     if (task === "") {
+      alert("Input cannot be empty");
       return;
     }
 
@@ -46,6 +47,14 @@ export function NewTask() {
           </div>
         ))}
       </div>
+
+      <footer>
+      <p>
+        <span className="amount"> {itemsList.length} </span>
+        tasks
+      </p>
+      <p className="clear">Clear</p>
+    </footer>
     </>
   );
 }
