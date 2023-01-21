@@ -5,7 +5,7 @@ import "./NewTask.css";
 export function NewTask() {
   const database = JSON.parse(localStorage.getItem("items"));
 
-  const [task, setTask] = useState('');
+  const [task, setTask] = useState("");
   const [itemsList, setItemsList] = useState(database || []);
 
   const handleAddItemToList = () => {
@@ -17,6 +17,10 @@ export function NewTask() {
     setItemsList([...itemsList, task]);
 
     setTask("");
+  };
+
+  const removeItem = (index) => {
+    setItemsList(itemsList.filter((item, i) => i !== index));
   };
 
   useEffect(() => {
@@ -38,23 +42,23 @@ export function NewTask() {
 
       <div className="todo-list">
         {itemsList.map((item, index) => (
-          <div className="list-items" key={`task - ${index}`}>
+          <div className="list-items" key={index}>
             <span className="todo-task">
               <i className="ph-circle"></i>
               <p className="task-content">{item}</p>
             </span>
-            <i className="ph-x"></i>
+            <i className="ph-x" onClick={() => removeItem(index)}></i>
           </div>
         ))}
       </div>
 
       <footer>
-      <p>
-        <span className="amount"> {itemsList.length} </span>
-        tasks
-      </p>
-      <p className="clear">Clear</p>
-    </footer>
+        <p>
+          <span className="amount"> {itemsList.length} </span>
+          tasks
+        </p>
+        <p className="clear" onClick={() => setItemsList([])}>Clear</p>
+      </footer>
     </>
   );
 }
