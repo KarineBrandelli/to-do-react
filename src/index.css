@@ -4,23 +4,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  font-family: 'Poppins';
-  
-  color-scheme: light dark;
-
-  --color-light-background: hsl(0, 0%, 98%);
-  --color-light-texts: hsl(236, 8%, 41%);
-  --color-light-lists: hsl(236, 33%, 92%);
-
-  --color-dark-background: hsl(235, 21%, 11%);
-  --color-dark-texts: hsl(0, 0%, 98%);
-  --color-dark-lists: hsl(235, 24%, 19%);
-
-  color: var(--color-light-texts);
-  background-color: var(--color-light-background);
-}
-
 body {
   min-height: 100vh;
 }
@@ -30,12 +13,12 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    color: var(--color-dark-texts);
-    background-color: var(--color-dark-background);
+  body {
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(235, 21%, 11%);
   }
 
-  #header-bg {
+  .header-img {
     background: url('./components/Header/assets/bg-desktop-dark.jpg');
     background-size: cover;
     background-repeat: no-repeat;
