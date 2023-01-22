@@ -27,16 +27,21 @@ export function NewTask() {
     localStorage.setItem("items", JSON.stringify(itemsList));
   }, [itemsList]);
 
+  const handleKeyDown = event => {
+    if (event.key === 'Enter') {
+      handleAddItemToList();
+    }
+  };
+
   return (
     <>
-      <div className="new-item">
+      <div className="new-item" tabIndex={0} onKeyDown={handleKeyDown}>
         <input
           className="new-content"
           placeholder="What's new?"
           type="text"
           value={task}
-          onChange={(e) => setTask(e.target.value)}
-        />
+          onChange={(e) => setTask(e.target.value)} />
         <i className="ph-plus" onClick={handleAddItemToList}></i>
       </div>
 
@@ -57,7 +62,9 @@ export function NewTask() {
           <span className="amount"> {itemsList.length} </span>
           tasks
         </p>
-        <p className="clear" onClick={() => setItemsList([])}>Clear</p>
+        <p className="clear" onClick={() => setItemsList([])}>
+          Clear
+        </p>
       </footer>
     </>
   );
