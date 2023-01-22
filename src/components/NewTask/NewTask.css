@@ -60,7 +60,8 @@
 }
 
 .ph-x,
-.ph-circle {
+.ph-circle,
+.clear {
   cursor: pointer;
 }
 
