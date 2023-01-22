@@ -11,10 +11,11 @@
 ## Preview 🔎
 
 <p align="center">
-
+[Gravação de tela de 22-01-2023 18:29:03.webm](https://user-images.githubusercontent.com/108953489/213941420-2379bb2f-c909-43ac-91ee-f6822b6f9d8f.webm)
 <p>
 
 <hr>
+
 
 ## Tecnologias ⚒️
 
