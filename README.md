@@ -11,10 +11,11 @@
 ## Preview 🔎
 
 <p align="center">
-https://user-images.githubusercontent.com/108953489/213941420-2379bb2f-c909-43ac-91ee-f6822b6f9d8f.webm
+![todo.webm](https://user-images.githubusercontent.com/108953489/213941607-71836dc2-83ae-47d0-bdf2-de8f4079fcdd.webm)
 <p>
 
 <hr>
+
 
 
 ## Tecnologias ⚒️
