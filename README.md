@@ -11,12 +11,10 @@
 ## Preview 🔎
 
 <p align="center">
-![todo.webm](https://user-images.githubusercontent.com/108953489/213941607-71836dc2-83ae-47d0-bdf2-de8f4079fcdd.webm)
+<img src="https://user-images.githubusercontent.com/108953489/213942384-ce3e66f2-4204-4ca2-8937-a90c2fea23e9.gif">
 <p>
 
 <hr>
-
-
 
 ## Tecnologias ⚒️
 
@@ -33,5 +31,5 @@ O projeto foi desenvolvido com as seguintes tecnologias:
 ## Recursos adicionais 💡
 
 <p align="justify">
-  Além de armazenar as tarefas na localStorage, permitindo o usuário recarregar a página e não perder o conteúdo inserido, ao remover as tarefas a localStorage também é atualizada. Esse projeto permitiu que eu adquirisse um conhecimento em como fazer um toggle para a troca de temas e também como captar a preferência padrão de tema do usuário.
+  Além de armazenar as tarefas na localStorage, permitindo o usuário recarregar a página e não perder o conteúdo inserido, ao remover as tarefas a localStorage também é atualizada. Esse projeto permitiu que eu adquirisse um conhecimento em como fazer um toggle para a troca de temas utilizando a biblioteca Styled Components.
 </p>
