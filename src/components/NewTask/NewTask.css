@@ -1,27 +1,9 @@
-:root {  
-  color-scheme: light dark;
-
-  --color-light-background: hsl(0, 0%, 98%);
-  --color-light-texts: hsl(236, 8%, 41%);
-  --color-light-lists: hsl(236, 33%, 92%);
-
-  --color-dark-background: hsl(235, 21%, 11%);
-  --color-dark-texts: hsl(0, 0%, 98%);
-  --color-dark-lists: hsl(235, 24%, 19%);
-
-  color: var(--color-light-texts);
-  background-color: var(--color-light-background);
-}
-
 .new-item {
   display: flex;
   align-items: center;
 }
 
 .new-content {
-  background-color: var(--color-light-lists);
-  color: var(--color-light-texts);
-
   width: 100%;
   border: none;
   outline: none;  
@@ -38,8 +20,6 @@
   display: flex;
   flex-direction: column;
   
-  background-color: var(--color-light-lists);
-  color: var(--color-light-texts);
   border-radius: .5rem;
   margin-top: 1.5rem;
 }
@@ -70,8 +50,6 @@ footer {
   flex-direction: row;
   justify-content: space-between;
 
-  background-color: var(--color-light-lists);
-  color: var(--color-light-texts);
   border-radius: .5rem;
   margin-top: 1rem;
   padding: 1rem;
