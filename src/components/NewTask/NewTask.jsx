@@ -1,4 +1,3 @@
-// import { Plus } from "phosphor-react";
 import React, { useState, useEffect } from "react";
 import "./NewTask.css";
 
