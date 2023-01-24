@@ -39,6 +39,11 @@
   gap: 1rem;
 }
 
+.task-content {
+  text-align: center;
+  padding-right: 1rem;
+}
+
 .ph-x,
 .ph-circle,
 .clear {
