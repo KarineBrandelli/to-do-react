@@ -24,21 +24,20 @@ export function App() {
       <>
         <GlobalStyles />
         <Header />
-        <div className="container">
-          <div className="title">
-            <h1>TODO</h1>
+        <div className="center">
+          <div className="container">
+            <div className="title">
+              <h1>TODO</h1>
 
-            <div className="toggle-switch">
-              <label>
-                <input
-                  className="toggle"
-                  type="checkbox"
-                />
-                <span className="slider" onClick={toggleTheme}></span>
-              </label>
+              <div className="toggle-switch">
+                <label>
+                  <input className="toggle" type="checkbox" />
+                  <span className="slider" onClick={toggleTheme}></span>
+                </label>
+              </div>
             </div>
+            <NewTask />
           </div>
-          <NewTask />
         </div>
       </>
     </ThemeProvider>
