@@ -8,23 +8,14 @@ body {
   min-height: 100vh;
 }
 
-#root {
-  display: grid;
+.center {
+  display: flex;
+  justify-content: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    color: hsl(0, 0%, 98%);
-    background-color: hsl(235, 21%, 11%);
-  }
-
-  .header-img {
-    background: url('./components/Header/assets/bg-desktop-dark.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.container {
+  align-items: center;
   
-    max-width: 100%;
-    padding: 10rem 0;
-  }
+  width: 40rem;
+  margin: -13rem 1rem 2rem 1rem;
 }
