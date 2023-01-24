@@ -24,12 +24,4 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.lists};
     color: ${({ theme }) => theme.text};
     transition: all 0.25s linear;
-  }
-  
-  .container {
-    justify-self: center;
-    justify-content: center;
-  
-    width: 40rem;
-    margin: -13rem 1rem 2rem 1rem;
   }`;
