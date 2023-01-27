@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Plus, Circle, X } from "phosphor-react";
 import "./NewTask.css";
 
 export function NewTask() {
@@ -41,17 +42,21 @@ export function NewTask() {
           type="text"
           value={task}
           onChange={(e) => setTask(e.target.value)} />
-        <i className="ph-plus" onClick={handleAddItemToList}></i>
+        <span className="plus-component" onClick={handleAddItemToList}>
+          <Plus size={16} />
+        </span>
       </div>
 
       <div className="todo-list">
         {itemsList.map((item, index) => (
           <div className="list-items" key={index}>
             <span className="todo-task">
-              <i className="ph-circle"></i>
+              <Circle size={16} />
               <p className="task-content">{item}</p>
             </span>
-            <i className="ph-x" onClick={() => removeItem(index)}></i>
+            <span className="x-component" onClick={() => removeItem(index)}>
+              <X size={16} />
+            </span>
           </div>
         ))}
       </div>
