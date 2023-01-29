@@ -1,9 +1,12 @@
 .new-item {
   display: flex;
   align-items: center;
+
 }
 
 .new-content {
+  font-family: 'Poppins';
+  font-size: 1rem;
   width: 100%;
   border: none;
   outline: none;  
