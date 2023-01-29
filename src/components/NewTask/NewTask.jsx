@@ -73,8 +73,11 @@ export function NewTask() {
             <span
               className="todo-task"
               onClick={() => toggleChecked(index)}>
-                <Circle size={16} checked={item.completed} />
-                {/* <CheckCircle size={16} /> */}
+                {
+                  item.completed === false
+                  ? <Circle size={16} checked={item.completed} />
+                  : <CheckCircle size={16} checked={item.completed} />
+                }              
               <p
                 className="task-content"
                 style={{ textDecoration: item.completed && "line-through" }} >
