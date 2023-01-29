@@ -51,6 +51,12 @@ export function NewTask() {
     );
   };
 
+  const handleCounter = () => {
+    const completedTasks = itemsList.filter((item) => item.completed === true);
+
+    return completedTasks.length;
+  };
+
   return (
     <>
       <div className="new-item" tabIndex={0} onKeyDown={handleKeyDown}>
@@ -95,7 +101,13 @@ export function NewTask() {
 
       <footer>
         <p>
+          total:
           <span className="amount"> {itemsList.length} </span>
+          tasks
+        </p>
+        <p>
+          completed:
+          <span className="amount"> {handleCounter()} </span>
           tasks
         </p>
         <p className="clear" onClick={() => setItemsList([])}>
