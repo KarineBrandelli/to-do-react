@@ -75,8 +75,8 @@ export function NewTask() {
               onClick={() => toggleChecked(index)}>
                 {
                   item.completed === false
-                  ? <Circle size={16} checked={item.completed} />
-                  : <CheckCircle size={16} checked={item.completed} />
+                  ? <Circle size={20} checked={item.completed} />
+                  : <CheckCircle size={20} checked={item.completed} />
                 }              
               <p
                 className="task-content"
